@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="part_two.css">
+</head>
+
+<body>
+    <div class="forca">
+        <img class="parte-do-corpo" src="hangman-0.svg" alt="Jogo da Forca">
+    </div>
+    <form>
+        <h2>Selecione o tema</h2>
+        <select id="temaSelecionado">
+            <option value="frutas">Geral</option>
+        </select>
+        <button onclick="iniciarJogo()">Reiniciar Jogo</button>
+        <button onclick="verTemas(event)">Veja os temas</button>
+
+        <div id="listaTemas" style="display: none;">
+            <ul>
+                <li>Fruta</li>
+                <li>Animal (Brasil)</li>
+                <li>Objeto (Cozinha)</li>
+                <li>Cor (Primária)</li>
+                <li>País (América do Sul)</li>
+            </ul>
+        </div>
+    
+    </form>
+    <p id="mensagemJogo"></p>
+
+    <div id="palavraSecreta">
+    </div>
+
+    <div id="forca">
+    </div>
+
+    <div id="tentativas">
+        <p>Tentativas restantes: <span id="tentativasRestantes">6</span></p>
+    </div>
+
+    <div>
+        <button onclick="tentativa('A')">A</button>
+        <button onclick="tentativa('B')">B</button>
+        <button onclick="tentativa('C')">C</button>
+        <button onclick="tentativa('D')">D</button>
+        <button onclick="tentativa('E')">E</button>
+        <button onclick="tentativa('F')">F</button>
+        <button onclick="tentativa('G')">G</button>
+        <button onclick="tentativa('H')">H</button>
+        <button onclick="tentativa('I')">I</button>
+        <button onclick="tentativa('J')">J</button>
+        <button onclick="tentativa('K')">K</button>
+        <button onclick="tentativa('L')">L</button>
+        <button onclick="tentativa('M')">M</button>
+        <button onclick="tentativa('N')">N</button>
+        <button onclick="tentativa('O')">O</button>
+        <button onclick="tentativa('P')">P</button>
+        <button onclick="tentativa('Q')">Q</button>
+        <button onclick="tentativa('R')">R</button>
+        <button onclick="tentativa('S')">S</button>
+        <button onclick="tentativa('T')">T</button>
+        <button onclick="tentativa('U')">U</button>
+        <button onclick="tentativa('V')">V</button>
+        <button onclick="tentativa('W')">W</button>
+        <button onclick="tentativa('X')">X</button>
+        <button onclick="tentativa('Y')">Y</button>
+        <button onclick="tentativa('Z')">Z</button>
+    </div>
+    <h4>Deixe suas reclamações abaixo</h4>
+    <textarea cols="25" rows="5"></textarea>
+    <button onclick="enviarFormulario()">Enviar</button>
+
+    <script src="part_three.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+</head>
+<body>
+
+    <div class="logobox">
+        <img class="logo" src="logopreto.png"/>
+        <p class="titulo">ADIVINHE O NÚMERO</p>
+        <p class="subtitulo">DIFICULDADE: FÁCIL</p>
+        <center>
+   <div class = "container">
+
+    <p class="titulobox">Adivinhe um número entre 0 e 10</p>
+    <input type="text" placeholder="Digite aqui" id="adivinhe">
+    <p class="inputbotao"><button class="botaores" onclick="jogar()">Adivinhe</button></p>
+    <p class="infbox" id="mensagemUm">Seu número de tentativas: 0</p>
+    <p class="infbox2" id="mensagemDois">Seu número de acertos: nenhuma</p>
+    <p id="mensagemTres"></p>
+    <p class="inputbotao"><button class="botaores" onclick="NovoJogo()">Reiniciar</button></p>
+   </div> 
+   <a href="indexPrincipal.html">
+    <button class="botao">Voltar</button>
+   </a>
+</body>
+<script src="scriptFacil.js"></script>
+
+
+
+<style>
+html{
+    background-image: url(back3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        font-size: 35px;
+        margin-top: 90px;
+    }
+    .subtitulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-top: 80px;
+    }
+    .titulobox{
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        margin-top: 40px;
+        font-weight: bold;  
+             
+
+    }
+.container{
+    font-family: arial;
+    width: 800px;  
+    margin:  auto;
+    padding:1PX  0px 5px 0px;
+    border: 1px solid black;
+    background-color: #dae7f1;
+    border-radius: 5px;
+    margin-top: 8px;
+    width: 600px;
+    
+}
+.logo{
+    position: fixed;
+    top: 20px;
+    left: 70px;
+    max-width: 250px;
+    max-height: 250px;
+}
+input{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    outline: 0;
+    text-align: center;
+    width: 250px;
+    margin-top: 20px;
+    border: 2px solid black;
+
+}
+.infbox{
+    margin-top: 40px;
+}
+.infbox2{
+    margin-bottom: 0px;
+}
+.botao{
+    margin-top: 30px;
+    background-color: rgb(13, 13, 13);
+    color: white;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    border: 10px;
+    outline: 0;
+    border-radius: 1px;
+    font-weight: bold;
+    transition: all ease  0.3s;
+    margin-right: 0px;
+    font-size: 17px;
+}
+.botaores{
+    margin-top: 30px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 10px;
+    outline: 0;
+    border-radius: 1px;
+    font-weight: bold;
+    transition: all ease  0.3s;
+    margin-right: 0px;
+    font-size: 14px;
+}
+button:hover{
+    background-color: #575757;
+  }
+
+
+</style>
+</html>

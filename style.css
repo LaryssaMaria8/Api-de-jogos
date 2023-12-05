@@ -1,0 +1,293 @@
+html{
+    background-color: rgb(202, 202, 202);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    background-color: #5fbb42;
+}
+#conteudo-cabecalho {
+    padding: 20px;
+    background-color: #5fbb42;
+
+}
+
+
+  
+  
+.barfixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+    width: 100%; /* Para ocupar a largura total da tela */
+}
+.barfixa input{
+    background-color: #d3d3d3;
+    width: 500px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+    padding: 4px 20px;
+    border: 2px solid #d3d3d3;
+}
+
+.barfixa button{
+        border: 0;
+        padding: 4px 20px;
+        outline: 0;
+        background-color: #f1f1f1;
+        color: rgb(0, 0, 0);
+        border-radius: 3px;
+        box-shadow: none;
+        transition: all ease  0.3s;
+        border: 2px solid #a3a3a3;
+    }
+    
+.barfixa button:hover{
+        background-color: #a6a6a6;
+    }
+
+ul.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  ul.menu li {
+    float: left;
+  }
+
+  ul.menu li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+
+  ul.menu li a:hover {
+    background-color: #a6a6a6;
+  }
+
+
+
+.pesquisabar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.desc-site{
+    text-align: center;
+    margin: 40px 20px 40px 20px;
+    font-size: 17px;
+}
+
+.title-desc{
+    font-size: 25px;
+}
+
+#carouselExampleCaptions {
+    width: 900px;
+    margin: auto;
+    border: 3px solid #5fbb42;
+    animation: piscar 5s infinite alternate; /* 1s de duração, repetição infinita e direção alternada */
+}
+
+
+
+
+.carrossel{
+    background-color: rgb(225, 225, 225);
+    padding: 30px;
+}
+
+
+
+.ancora-procura{
+    background-color: white;
+    padding: 30px 30px;
+}
+.box-resultado{
+    width: 100%;
+    height: 110px;
+    background-color: #5fbb42;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+.resultado-titulo{
+    padding: 30px;
+}
+.game-card{
+    background-color: rgb(225, 225, 225);
+    border-bottom: 7px solid white;
+    padding: 0px 60px 20px 60px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+
+  }
+
+
+
+.game-image{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.custom-titulo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+        padding: 30px 300px 0;
+
+}
+.custom-genero{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 13px;
+
+
+}
+.custom-plataforma{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 40px;
+    
+
+
+}
+.custom-descricao{
+    margin: 0 10px 0 0px;
+
+}
+
+.rating-container{
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+}
+
+.gameList{
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+    bottom: 0;
+    width: 100%;
+  }
+
+
+
+
+
+  @media only screen and (max-width: 1020px) {
+    .barfixa {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .barfixa input {
+        width: 100%;
+        margin: 10px 0;
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    .barfixa button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    ul.menu {
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+
+    ul.menu li {
+        float: none;
+        display: inline-block;
+    }
+
+    .logo {
+        max-width: 60px;
+        margin: 0 auto;
+    }
+
+    .desc-site {
+        margin: 20px;
+    }
+
+    #carouselExampleCaptions {
+        width: 100%;
+    }
+
+    .ancora-procura {
+        padding: 20px;
+    }
+
+    .box-resultado {
+        height: auto;
+        padding: 20px;
+    }
+
+    .game-card {
+        padding: 0px 20px 20px 20px;
+    }
+
+    .custom-titulo {
+        padding: 20px 10px 0;
+    }
+
+    .custom-plataforma,
+    .custom-genero,
+    .custom-descricao {
+        margin: 0 10px;
+    }
+
+    .game-image {
+        max-width: 100%;
+    }
+}
